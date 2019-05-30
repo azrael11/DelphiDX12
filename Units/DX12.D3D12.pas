@@ -558,6 +558,7 @@ type
     TSingleArray4 = array [0..3] of single;
     TUINTArray4 = array [0..3] of UINT;
 
+    PUINT32 = PDWord;
     PUINT64 = ^UINT64;
 
     TD3D12_GPU_VIRTUAL_ADDRESS = UINT64;

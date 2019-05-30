@@ -1,0 +1,81 @@
+package PDelphiDX12;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'iPub third-party - DelphiDX12'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl;
+
+contains
+  DX12.D2D1 in 'Units\DX12.D2D1.pas',
+  DX12.D2D1_3 in 'Units\DX12.D2D1_3.pas',
+  DX12.D2D1EffectAuthor_1 in 'Units\DX12.D2D1EffectAuthor_1.pas',
+  DX12.D2D1Effects2 in 'Units\DX12.D2D1Effects2.pas',
+  DX12.D2D1SVG in 'Units\DX12.D2D1SVG.pas',
+  DX12.D3D9Types in 'Units\DX12.D3D9Types.pas',
+  DX12.D3D10 in 'Units\DX12.D3D10.pas',
+  DX12.D3D10_1 in 'Units\DX12.D3D10_1.pas',
+  DX12.D3D11 in 'Units\DX12.D3D11.pas',
+  DX12.D3D11_1 in 'Units\DX12.D3D11_1.pas',
+  DX12.D3D11_2 in 'Units\DX12.D3D11_2.pas',
+  DX12.D3D11_3 in 'Units\DX12.D3D11_3.pas',
+  DX12.D3D11_4 in 'Units\DX12.D3D11_4.pas',
+  DX12.D3D11On12 in 'Units\DX12.D3D11On12.pas',
+  DX12.D3D12 in 'Units\DX12.D3D12.pas',
+  DX12.D3D12SDKLayers in 'Units\DX12.D3D12SDKLayers.pas',
+  DX12.D3D12Shader in 'Units\DX12.D3D12Shader.pas',
+  DX12.D3D12Video in 'Units\DX12.D3D12Video.pas',
+  DX12.D3DCommon in 'Units\DX12.D3DCommon.pas',
+  DX12.D3DCompiler in 'Units\DX12.D3DCompiler.pas',
+  DX12.D3DCSX in 'Units\DX12.D3DCSX.pas',
+  DX12.D3DUKMDT in 'Units\DX12.D3DUKMDT.pas',
+  DX12.D3DX10 in 'Units\DX12.D3DX10.pas',
+  DX12.D3DX11 in 'Units\DX12.D3DX11.pas',
+  DX12.D3DX11Effect in 'Units\DX12.D3DX11Effect.pas',
+  DX12.D3DX12 in 'Units\DX12.D3DX12.pas',
+  DX12.DCommon in 'Units\DX12.DCommon.pas',
+  DX12.DComp in 'Units\DX12.DComp.pas',
+  DX12.DCompAnimation in 'Units\DX12.DCompAnimation.pas',
+  DX12.DCompTypes in 'Units\DX12.DCompTypes.pas',
+  DX12.DocumentTarget in 'Units\DX12.DocumentTarget.pas',
+  DX12.DWrite in 'Units\DX12.DWrite.pas',
+  DX12.DWrite3 in 'Units\DX12.DWrite3.pas',
+  DX12.DXGI in 'Units\DX12.DXGI.pas',
+  DX12.DXGI1_2 in 'Units\DX12.DXGI1_2.pas',
+  DX12.DXGI1_3 in 'Units\DX12.DXGI1_3.pas',
+  DX12.DXGI1_4 in 'Units\DX12.DXGI1_4.pas',
+  DX12.DXGI1_5 in 'Units\DX12.DXGI1_5.pas',
+  DX12.DXGI1_6 in 'Units\DX12.DXGI1_6.pas',
+  DX12.DXGIDebug in 'Units\DX12.DXGIDebug.pas',
+  DX12.DXGIMessages in 'Units\DX12.DXGIMessages.pas',
+  DX12.DXProgrammableCapture in 'Units\DX12.DXProgrammableCapture.pas',
+  DX12.OCIdl in 'Units\DX12.OCIdl.pas',
+  DX12.WinCodec in 'Units\DX12.WinCodec.pas',
+  DX12.Xinput in 'Units\DX12.Xinput.pas';
+
+end.

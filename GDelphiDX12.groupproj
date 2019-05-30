@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E7F4D9D6-E46F-4840-B18A-0D6F0749DBFA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PDelphiDX12.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PDelphiDX12">
+        <MSBuild Projects="PDelphiDX12.dproj"/>
+    </Target>
+    <Target Name="PDelphiDX12:Clean">
+        <MSBuild Projects="PDelphiDX12.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PDelphiDX12:Make">
+        <MSBuild Projects="PDelphiDX12.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PDelphiDX12"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PDelphiDX12:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PDelphiDX12:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+    <ItemGroup Condition="'$(BuildGroup)'=='All'">
+        <BuildGroupProject Include="PDelphiDX12.dproj">
+            <ProjectGuid>{CE91C401-76C0-4FB0-AEFA-17D4F56C693F}</ProjectGuid>
+            <Configurations>Debug;Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+    </ItemGroup>
+</Project>
