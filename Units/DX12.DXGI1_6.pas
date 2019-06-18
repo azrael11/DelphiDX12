@@ -6,6 +6,7 @@ unit DX12.DXGI1_6;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils, DX12.DXGI1_5, DX12.DXGI1_2, DX12.DXGI1_4, DX12.DXGI;
 
@@ -114,6 +115,7 @@ type
 
 function DXGIDeclareAdapterRemovalSupport(): HRESULT; stdcall; external '';
 
+{$ENDIF}
 implementation
 
 end.

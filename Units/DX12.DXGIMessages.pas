@@ -9,6 +9,7 @@ unit DX12.DXGIMessages;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Classes, SysUtils;
 
@@ -343,7 +344,7 @@ type
         DXGI_MSG_Phone_IDXGISwapChain_SetBackgroundColor_FlipSequentialRequired,
         DXGI_MSG_Phone_IDXGISwapChain_GetBackgroundColor_FlipSequentialRequired);
 
-
+{$ENDIF}
 implementation
 
 end.

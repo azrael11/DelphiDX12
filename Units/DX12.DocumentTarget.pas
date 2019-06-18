@@ -6,6 +6,7 @@ unit DX12.DocumentTarget;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -61,30 +62,8 @@ type
             jobOutputStream: IStream; jobPrintTicketStream: IStream; out docPackageTarget: IPrintDocumentPackageTarget): HResult; stdcall;
     end;
 
-
+{$ENDIF}
 implementation
 
 end.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

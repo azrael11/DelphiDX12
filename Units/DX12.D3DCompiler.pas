@@ -6,6 +6,7 @@ unit DX12.D3DCompiler;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -324,7 +325,7 @@ function D3DDecompressShaders(pSrcData: Pointer; SrcDataSize: SIZE_T; uNumShader
 
 
 
-
+{$ENDIF}
 implementation
 
 end.

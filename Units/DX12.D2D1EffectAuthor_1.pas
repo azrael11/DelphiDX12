@@ -37,6 +37,7 @@ unit DX12.D2D1EffectAuthor_1;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils, DX12.D2D1, DX12.DXGI, DX12.D2D1_3;
 
@@ -68,7 +69,7 @@ type
 
 
 
-
+{$ENDIF}
 implementation
 
 end.

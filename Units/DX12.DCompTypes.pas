@@ -5,6 +5,7 @@ unit DX12.DCompTypes;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils,
     DX12.DXGI,
@@ -86,8 +87,9 @@ type
 
 //{$ENDIF}// NTDDI_WIN8
 
+{$ENDIF}
 
 implementation
 
 end.
- 
+

@@ -43,6 +43,7 @@ unit DX12.D3D12SDKLayers;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils,
     DX12.D3D12;
@@ -1721,7 +1722,7 @@ TD3D12_DEBUG_FEATURE = (
 
 
 
-
+{$ENDIF}
 implementation
 
 end.

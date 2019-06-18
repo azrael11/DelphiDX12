@@ -7,6 +7,7 @@ unit DX12.D3DX10;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -3560,4 +3561,8 @@ begin
     Result := pOut;
 end;
 
+
+{$ELSE}
+implementation
+{$ENDIF}
 end.

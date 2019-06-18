@@ -7,6 +7,7 @@ unit DX12.DXGI1_3;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -148,72 +149,8 @@ type
 function CreateDXGIFactory2(Flags: UINT; const riid: TGUID; out ppFactory): HResult; stdcall; external DLL_DXGI;
 function DXGIGetDebugInterface1(Flags: UINT; const riid: TGUID; out pDebug): HResult; stdcall; external DLL_DXGI;
 
+{$ENDIF}
 implementation
 
 end.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -12,6 +12,7 @@ unit DX12.D3DX11;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -418,4 +419,9 @@ begin
 end;
 
 {$R+}
+
+
+{$ELSE}
+implementation
+{$ENDIF}
 end.

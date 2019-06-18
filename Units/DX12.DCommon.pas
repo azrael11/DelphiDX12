@@ -6,6 +6,7 @@ unit DX12.DCommon;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -58,6 +59,7 @@ type
 
     PD2D1_PIXEL_FORMAT = ^TD2D1_PIXEL_FORMAT;
 
+{$ENDIF}
 implementation
 
 end.

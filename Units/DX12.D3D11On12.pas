@@ -40,6 +40,7 @@ unit DX12.D3D11On12;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -126,34 +127,7 @@ function D3D11On12CreateDevice(pDevice: IUnknown; Flags: UINT; pFeatureLevels: P
     out pChosenFeatureLevel: TD3D_FEATURE_LEVEL): HResult; stdcall; external D3D11_DLL;
 
 
+{$ENDIF}
 implementation
 
 end.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -41,6 +41,7 @@ unit DX12.DXGI1_5;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -129,7 +130,7 @@ type
 
 
 
-
+{$ENDIF}
 implementation
 
 end.

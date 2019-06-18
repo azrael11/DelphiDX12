@@ -22,6 +22,7 @@ unit DX12.DXProgrammableCapture;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses Windows, Classes;
 
 const
@@ -34,6 +35,7 @@ type
         procedure EndCapture; stdcall;
     end;
 
+{$ENDIF}
 implementation
 
 end.

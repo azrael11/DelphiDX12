@@ -30,6 +30,7 @@ unit DX12.D3DX11Effect;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -1217,6 +1218,7 @@ function D3DX11CompileEffectFromFile(pFileName: LPCWSTR; const pDefines: TD3D_SH
 
 {$ENDIF}
 
+{$ENDIF}
 implementation
 
 end.

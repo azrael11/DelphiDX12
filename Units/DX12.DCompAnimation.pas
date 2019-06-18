@@ -2,6 +2,7 @@ unit DX12.DCompAnimation;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, SysUtils, Classes;
 
@@ -24,6 +25,7 @@ type
     end;
 
 
+{$ENDIF}
 implementation
 
 end.

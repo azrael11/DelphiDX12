@@ -9,6 +9,7 @@ unit DX12.WinCodec;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -1245,7 +1246,7 @@ function WICMapSchemaToName(guidMetadataFormat: TGUID; pwzSchema: PWideChar; cch
 
 
 
-
+{$ENDIF}
 implementation
 
 

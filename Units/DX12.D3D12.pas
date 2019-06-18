@@ -46,6 +46,7 @@ unit DX12.D3D12;
 {$ENDIF}
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -7034,4 +7035,7 @@ begin
     MaxDepth := maxDepth;
 end;
 
+{$ELSE}
+implementation
+{$ENDIF}
 end.

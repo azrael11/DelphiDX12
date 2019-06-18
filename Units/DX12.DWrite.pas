@@ -6,6 +6,7 @@ unit DX12.DWrite;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -1412,8 +1413,10 @@ type
             out hitTestMetrics: TDWRITE_HIT_TEST_METRICS): HResult; stdcall;
         function HitTestTextPosition(textPosition: UINT32; isTrailingHit: longbool; out pointX: single;
             out pointY: single; out hitTestMetrics: TDWRITE_HIT_TEST_METRICS): HResult; stdcall;
-        function HitTestTextRange(textPosition: UINT32; textLength: UINT32; originX: single; originY: single;
-            out hitTestMetrics: PDWRITE_HIT_TEST_METRICS; maxHitTestMetricsCount: UINT32; out actualHitTestMetricsCount: UINT32): HResult; stdcall;
+        //function HitTestTextRange(textPosition: UINT32; textLength: UINT32; originX: single; originY: single;
+        //    out hitTestMetrics: PDWRITE_HIT_TEST_METRICS; maxHitTestMetricsCount: UINT32; out actualHitTestMetricsCount: UINT32): HResult; stdcall;
+        function HitTestTextRange(textPosition: Cardinal; textLength: Cardinal; originX: Single; originY: Single;
+          var hitTestMetrics: TDWRITE_HIT_TEST_METRICS; maxHitTestMetricsCount: Cardinal; out actualHitTestMetricsCount: Cardinal): HResult; stdcall;
     end;
 
 
@@ -1801,4 +1804,8 @@ begin
 end;
 
 
+
+{$ELSE}
+implementation
+{$ENDIF}
 end.

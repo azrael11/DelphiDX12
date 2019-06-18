@@ -6,6 +6,7 @@ unit DX12.DWrite3;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -927,6 +928,7 @@ type
 //{$endif} // NTDDI_VERSION >= NTDDI_WIN10_RS5
 
 
+{$ENDIF}
 implementation
 
 end.

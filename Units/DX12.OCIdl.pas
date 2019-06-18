@@ -6,6 +6,7 @@ unit DX12.OCIdl;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -149,33 +150,8 @@ type
 
     PIPropertyBag2 = ^IPropertyBag2;
 
+{$ENDIF}
 implementation
 
 end.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

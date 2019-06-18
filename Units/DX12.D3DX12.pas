@@ -22,6 +22,7 @@ unit DX12.D3DX12;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils,
     DX12.D3DCommon,
@@ -1346,6 +1347,9 @@ end;
 {$ENDIF}
 
 
+{$ELSE}
+implementation
+{$ENDIF}
 end.
 
 

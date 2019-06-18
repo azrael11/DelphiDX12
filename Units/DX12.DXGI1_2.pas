@@ -7,6 +7,7 @@ unit DX12.DXGI1_2;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -273,7 +274,7 @@ type
     end;
 
 
-
+{$ENDIF}
 implementation
 
 end.

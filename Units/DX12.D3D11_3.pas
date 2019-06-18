@@ -40,6 +40,7 @@ unit DX12.D3D11_3;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -1014,4 +1015,8 @@ begin
     TextureLayout := AtextureLayout;
 end;
 
+
+{$ELSE}
+implementation
+{$ENDIF}
 end.

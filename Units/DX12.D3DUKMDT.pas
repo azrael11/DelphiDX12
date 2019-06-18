@@ -8,6 +8,7 @@ unit DX12.D3DUKMDT;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils;
 
@@ -27,6 +28,7 @@ type
 
     TD3DDDI_VIDEO_PRESENT_SOURCE_ID = UINT;
 
+{$ENDIF}
 implementation
 
 end.

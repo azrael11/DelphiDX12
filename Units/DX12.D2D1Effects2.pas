@@ -6,6 +6,7 @@ unit DX12.D2D1Effects2;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -414,6 +415,7 @@ type
 
 //{$endif}
 
+{$ENDIF}
 implementation
 
 end.

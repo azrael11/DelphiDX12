@@ -16,6 +16,7 @@ unit DX12.D3D9Types;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils;
 
@@ -37,6 +38,7 @@ type
             1: (m: array[0..3, 0..3] of single);
     end;
 
+{$ENDIF}
 implementation
 
 end.

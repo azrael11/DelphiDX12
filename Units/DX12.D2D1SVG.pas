@@ -13,6 +13,7 @@ unit DX12.D2D1SVG;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils, DX12.D2D1, DX12.DXGI,
     ActiveX;
@@ -749,6 +750,7 @@ type
 
 //{$ENDIF}
 
+{$ENDIF}
 implementation
 
 (*

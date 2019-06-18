@@ -40,6 +40,7 @@ unit DX12.D3D11_4;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -176,6 +177,7 @@ type
     end;
 
 
+{$ENDIF}
 implementation
 
 end.

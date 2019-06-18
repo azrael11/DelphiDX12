@@ -9,6 +9,7 @@ interface
 {$mode delphi}{$H+}
 {$ENDIF}
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -1265,7 +1266,8 @@ function DCompositionAttachMouseDragToHwnd(visual: IDCompositionVisual; hwnd: HW
 
 // {$ENDIF} // NTDDI_WIN8
 
+{$ENDIF}
 implementation
 
 end.
- 
+

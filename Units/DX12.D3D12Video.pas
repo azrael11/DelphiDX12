@@ -41,6 +41,7 @@ unit DX12.D3D12Video;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils, DX12.DXGI, DX12.D3D12;
 
@@ -676,6 +677,7 @@ type
     end;
 
 
+{$ENDIF}
 implementation
 
 end.

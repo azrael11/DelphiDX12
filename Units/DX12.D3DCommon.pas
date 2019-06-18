@@ -48,6 +48,7 @@ unit DX12.D3DCommon;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -800,7 +801,7 @@ type
         );
 
 
-
+{$ENDIF}
 implementation
 
 end.

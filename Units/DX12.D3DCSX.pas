@@ -15,6 +15,7 @@ unit DX12.D3DCSX;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 uses
     Windows, Classes, SysUtils,
@@ -274,6 +275,7 @@ function D3DX11CreateFFT3DComplex(pDeviceContext: ID3D11DeviceContext; X: UINT; 
     stdcall; external D3DCSX_DLL;
 
 
+{$ENDIF}
 implementation
 
 end.

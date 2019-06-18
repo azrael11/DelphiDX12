@@ -10,17 +10,20 @@ unit DX12.XInput;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes, SysUtils;
 
 // Current name of the DLL shipped in the same SDK as this header.
 // The name reflects the current version
 
+{$ENDIF}
 
 const
   _WIN32_WINNT_WIN8 = 8;
   _WIN32_WINNT_WIN10 = 10;
   _WIN32_WINNT =  _WIN32_WINNT_WIN8;
+{$IFDEF MSWINDOWS}
 
 {$IF _WIN32_WINNT >= _WIN32_WINNT_WIN8}
     XINPUT_DLL = 'xinput1_4.dll';
@@ -273,7 +276,7 @@ function XInputGetDSoundAudioDeviceGuids(dwUserIndex: DWORD;          // Index o
 {$ENDIF}//(_WIN32_WINNT < _WIN32_WINNT_WIN8)
 
 
-
+{$ENDIF}
 implementation
 
 end.

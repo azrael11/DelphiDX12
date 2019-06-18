@@ -72,6 +72,7 @@ unit DX12.D2D1_3;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -803,4 +804,7 @@ begin
 end;
 
 
+{$ELSE}
+implementation
+{$ENDIF}
 end.

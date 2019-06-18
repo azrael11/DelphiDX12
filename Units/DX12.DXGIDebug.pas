@@ -10,6 +10,7 @@ unit DX12.DXGIDebug;
 
 interface
 
+{$IFDEF MSWINDOWS}
 uses
     Windows, Classes;
 
@@ -169,7 +170,7 @@ type
 
 function DXGIGetDebugInterface(const riid: TGUID; out ppDebug): HResult; stdcall; external DXGIDEBUG_DLL;
 
-
+{$ENDIF}
 implementation
 
 end.

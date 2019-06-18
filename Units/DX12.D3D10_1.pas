@@ -8,6 +8,7 @@ unit DX12.D3D10_1;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -316,6 +317,7 @@ function D3D10CreateDeviceAndSwapChain1(pAdapter: IDXGIAdapter; DriverType: TD3D
     out ppSwapChain: IDXGISwapChain; out ppDevice: ID3D10Device1): HResult; stdcall; external DLL_D3D10_1;
 
 
+{$ENDIF}
 implementation
 
 end.

@@ -42,6 +42,7 @@ unit DX12.D3D10;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -3209,4 +3210,8 @@ begin
     MiscFlags := AmiscFlags;
 end;
 
+
+{$ELSE}
+implementation
+{$ENDIF}
 end.

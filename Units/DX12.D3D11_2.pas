@@ -6,6 +6,7 @@ unit DX12.D3D11_2;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -127,10 +128,8 @@ type
             out pNumQualityLevels: UINT): HResult; stdcall;
     end;
 
+{$ENDIF}
 implementation
 
 end.
-
-
-
 

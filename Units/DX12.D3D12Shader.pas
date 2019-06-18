@@ -46,6 +46,7 @@ unit DX12.D3D12Shader;
 
 interface
 
+{$IFDEF MSWINDOWS}
 {$Z4}
 
 uses
@@ -462,28 +463,8 @@ begin
     Result := ((Version) shr 0) and $f;
 end;
 
+{$ELSE}
+implementation
+{$ENDIF}
 end.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
