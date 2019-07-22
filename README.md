@@ -32,3 +32,8 @@ This header translation is  NOT based on the JSB headers
   translated to FPC in some headers (still some work todo).
   FPC supports now helper classes for interface.
   In Delphi you miss this feature. Maybe someday...
+
+#### Installation notes
+* It is recommended that before installation, you install the windows [DirectX End-User Runtime Web Installer]
+
+[DirectX End-User Runtime Web Installer]: https://www.microsoft.com/pt-br/download/details.aspx?id=35
