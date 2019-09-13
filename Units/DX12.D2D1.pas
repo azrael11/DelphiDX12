@@ -2100,7 +2100,7 @@ type
     ID2D1Brush = interface(ID2D1Resource)
         ['{2cd906a8-12e2-11dc-9fed-001143a055f9}']
         procedure SetOpacity(opacity: single); stdcall;
-        procedure SetTransform(const transform: PD2D1_MATRIX_3X2_F); stdcall;
+        procedure SetTransform(const transform: TD2D1_MATRIX_3X2_F); stdcall;
         function GetOpacity(): single; stdcall;
         procedure GetTransform(out transform: TD2D1_MATRIX_3X2_F); stdcall;
     end;
@@ -2513,7 +2513,7 @@ type
             stdcall;
         procedure DrawGlyphRun(baselineOrigin: TD2D1_POINT_2F; glyphRun: PDWRITE_GLYPH_RUN; foregroundBrush: ID2D1Brush;
             measuringMode: TDWRITE_MEASURING_MODE = DWRITE_MEASURING_MODE_NATURAL); stdcall;
-        procedure SetTransform(const transform: PD2D1_MATRIX_3X2_F); stdcall;
+        procedure SetTransform(const transform: TD2D1_MATRIX_3X2_F); stdcall;
         procedure GetTransform(out transform: TD2D1_MATRIX_3X2_F); stdcall;
         procedure SetAntialiasMode(antialiasMode: TD2D1_ANTIALIAS_MODE);
             stdcall;

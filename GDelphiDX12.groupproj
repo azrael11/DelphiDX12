@@ -37,7 +37,7 @@
         <BuildGroupProject Include="PDelphiDX12.dproj">
             <ProjectGuid>{CE91C401-76C0-4FB0-AEFA-17D4F56C693F}</ProjectGuid>
             <Configurations>Debug;Release</Configurations>
-            <Platforms>Android;iOSDevice32;iOSDevice64;Win32;Win64</Platforms>
+            <Platforms>Android;iOSDevice64;Win32;Win64</Platforms>
             <Enabled>True</Enabled>
         </BuildGroupProject>
     </ItemGroup>
